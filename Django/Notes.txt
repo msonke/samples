@@ -1,0 +1,70 @@
+==== Notes ====
+
+**
+Use virtual environments in order to make sure dependencies don't break code.
+**
+
+!!!!!!! CASE SENSITIVE !!!!!!!
+
+django-admin startproject <projectname>
+
+__init__.py is a blank Python file
+settings.py stores project settings
+urls.py stores URL patterns for the web application
+wsgi.py acts as Web Server Gateway
+manage.py is associated with many of the commands used
+
+###### Running Test Server ######
+
+python manage.py runserver
+
+** Must be in the right directory **
+
+###### Creating Apps ######
+
+python manage.py startapp <appname>
+
+Add app to settings.py
+
+Link views to the url page
+Create functions inside views to reference, similar to React.
+** You can use HTML code within functions and it is understood. **
+** Case Sensitive **
+
+###### Migrations ######
+
+python manage.py migrate
+python manage.py makemigrations <appname>
+python manage.py migrate
+
+python manage.py shell
+
+###### Admin ######
+
+import into admin.py
+python manage.py createsuperuser
+
+###### Faker ######
+
+pip install Faker | for fake data
+
+###### Debug Toolbar ######
+
+pip install django-debug-toolbar | for debug toolbar
+
+###### Starting a new project process ######
+
+> django-admin startproject <name>
+> cd into directory
+> django-admin startapp <name>
+> settings.py > import os > TEMPLATE_DIR = os.path.join(BASE_DIR,'templates')
+> add <name> to installed apps section
+> under template 'dirs' add TEMPLATE_DIR,
+> add templates folder, name subdir as the app name, setup html files
+> create functions under views to link to html files
+
+###### Template Inheritance ######
+
+create a template with {% block <blockname> %} // {% endblock %}
+call the template with <!DOCTYPE html> // {% extends "<templatefile>" %}
+// {% block <blockname %} // {% endblock %}
