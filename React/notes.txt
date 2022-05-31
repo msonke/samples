@@ -1,1 +1,65 @@
 This is a place for React notes.
+
+// Place this into the README file when finished and organize for readability.
+
+Ctrl + / to comment out multiple lines
+Alt + Up/Down to move lines up or down
+
+npx create-react-app <project name>  // this will create the folder, so don't create it
+
+cd into folder
+npm start
+localhost:3000
+ctrl+c to stop
+
+npm run build to compile the site for deployment
+
+package.json holds the dependencies
+src is where you work mainly
+public has the single index.html file
+
+npm install to install all dependencies
+
+
+add components folder into src folder
+you're building a component tree
+a component is just a JS function
+
+lowercase is html elements, Uppercase is defined by you/React
+
+ctrl+shift+i to quickly format
+
+css code is standard, not special
+
+
+
+=== Arrow Function ===
+
+function functionName(object); == const functionName = (object) => {};
+
+=== Props ===
+
+Allows for reusable data from component to components
+
+Split the components into smaller building blocks
+
+=== Event Listeners ===
+
+use on as a special prop instead of normal HTML Listeners
+They want a function as a value
+
+Import useState from react when you want to use stateful components
+useState wants an initial variable
+
+Whenever you update state but you depend on a previous state, 
+you should not use individual state, but pass that function to another.
+
+/*
+    setUserInput((prevState)) => {
+        return {...prevState, newState: event.target.value}
+    };
+*/
+
+You can prevent the default behaviours with event.preventDefault();
+
+** REVIEW CHILD TO PARENT COMPONENT//LIFTING STATE UP
