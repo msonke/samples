@@ -52,6 +52,11 @@ pip install Faker | for fake data
 
 pip install django-debug-toolbar | for debug toolbar
 
+###### Encryption ######
+
+pip install bcrypt
+pip install django[argon2]
+
 ###### Starting a new project process ######
 
 > django-admin startproject <name>
