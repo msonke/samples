@@ -1,14 +1,18 @@
 To Do:
 
-1) React
-2) Node.js
+React
+Node
 
+React Native
+Django
 
-3) Django
-4) PostgreSQL
-5) Selenium
-6) Docker + Kubernetes
+Postgres
+Docker/K3s
+AwS
 
+Dart
+Gin
 
-7) Angular
-8) Flask
+Serverless
+ML
+Flask
