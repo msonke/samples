@@ -1,18 +1,5 @@
 To Do:
 
-React
-Node
-
-React Native
-Django
-
-Postgres
-Docker/K3s
-AwS
-
-Dart
-Gin
-
-Serverless
-ML
-Flask
+Redo GitHub Organization
+Clean GitHub Files
+Secure // Update Profile
